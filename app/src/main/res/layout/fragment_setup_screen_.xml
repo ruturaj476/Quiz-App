@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94D7F6"
+    tools:context=".SetupScreen_Fragment"
+    android:id="@+id/Setup_ScreenFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewOfRules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardElevation="11dp"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true"
+        >
+        <LinearLayout
+            android:background="#87A7F8"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                android:textSize="35sp"
+                android:layout_gravity="center_horizontal"></TextView>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.There are total 10 questions in the Quiz"></TextView>
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Each question has 1 Mark"></TextView>
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Quiz has Time 10 minutes it will autosubmit after 10 minutes"
+                ></TextView>
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Select one option for each Question"
+                ></TextView>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textColor="@color/black"
+        android:backgroundTint="#87A7F8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewOfRules"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
